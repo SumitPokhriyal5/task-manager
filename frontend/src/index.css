@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slatebg text-ink font-sans antialiased;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-slatebg;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
