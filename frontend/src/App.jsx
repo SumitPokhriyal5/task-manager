@@ -1,6 +1,8 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import AdminRoute from "./routes/AdminRoute";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 const Placeholder = ({ label }) => (
   <div className="min-h-screen grid place-items-center">
@@ -14,8 +16,8 @@ const Placeholder = ({ label }) => (
 function App() {
   return (
     <Routes>
-      <Route path="/login" element={<Placeholder label="Login" />} />
-      <Route path="/register" element={<Placeholder label="Register" />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
 
       <Route element={<ProtectedRoute />}>
         <Route path="/dashboard" element={<Placeholder label="My Tasks" />} />
