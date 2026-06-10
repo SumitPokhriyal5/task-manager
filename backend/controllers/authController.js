@@ -1,5 +1,6 @@
 import User from "../models/User.js";
 import generateToken from "../utils/generateToken.js";
+import logActivity from "../utils/logActivity.js";
 
 export const register = async (req, res) => {
   try {
@@ -50,7 +51,7 @@ export const login = async (req, res) => {
       return res.status(403).json({ message: "Account is inactive" });
     }
 
-    // Step 5: log LOGIN activity here
+    await logActivity(user._id, "LOGIN", `${user.email} logged in`);
 
     res.json({
       token: generateToken(user._id),
