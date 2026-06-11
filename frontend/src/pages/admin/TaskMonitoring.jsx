@@ -162,7 +162,7 @@ const TaskMonitoring = () => {
           ))}
         </div>
 
-        <div className="relative sm:w-64">
+        <div className="relative w-full sm:w-64">
           <svg
             className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted"
             viewBox="0 0 24 24"

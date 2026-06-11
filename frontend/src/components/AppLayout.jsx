@@ -54,7 +54,7 @@ const AppLayout = () => {
           </button>
 
           <div className="ml-auto flex items-center gap-3">
-            <div className="text-right">
+            <div className="hidden text-right sm:block">
               <p className="text-sm font-medium leading-tight text-ink">
                 {user?.name}
               </p>

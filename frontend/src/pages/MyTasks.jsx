@@ -257,7 +257,7 @@ const MyTasks = () => {
                 <Badge>{task.status}</Badge>
               </div>
 
-              <div className="mt-4 flex items-center justify-end gap-2 opacity-0 transition group-hover:opacity-100">
+              <div className="mt-4 flex items-center justify-end gap-2 transition sm:opacity-0 sm:group-hover:opacity-100">
                 <button
                   onClick={() => openEdit(task)}
                   className="rounded-lg px-2.5 py-1 text-xs font-medium text-muted transition hover:bg-slatebg hover:text-ink"

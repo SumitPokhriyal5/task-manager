@@ -10,9 +10,9 @@ const DataTable = ({
   renderRow,
 }) => {
   return (
-    <div className="overflow-hidden rounded-2xl border border-line bg-surface shadow-card">
+    <div className="relative overflow-hidden rounded-2xl border border-line bg-surface shadow-card">
       <div className="overflow-x-auto">
-        <table className="w-full text-left text-sm">
+        <table className="w-full min-w-[640px] text-left text-sm">
           <thead>
             <tr className="border-b border-line bg-slatebg/50">
               {columns.map((col) => (
@@ -65,6 +65,7 @@ const DataTable = ({
           </tbody>
         </table>
       </div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-surface to-transparent sm:hidden" />
     </div>
   );
 };

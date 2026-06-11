@@ -3,6 +3,7 @@ import { api } from "../../lib/api";
 import PageHeader from "../../components/PageHeader";
 import StatCard from "../../components/StatCard";
 import Skeleton from "../../components/Skeleton";
+import { Link } from "react-router-dom";
 
 const actionLabels = {
   LOGIN: "signed in",
@@ -93,12 +94,12 @@ const AdminOverview = () => {
               <h2 className="font-display text-lg font-semibold text-ink">
                 Recent activity
               </h2>
-              <a
-                href="/admin/logs"
+              <Link
+                to="/admin/logs"
                 className="text-sm font-semibold text-primary hover:text-primary-hover"
               >
                 View all
-              </a>
+              </Link>
             </div>
 
             <div className="rounded-2xl border border-line bg-surface p-2 shadow-card">
