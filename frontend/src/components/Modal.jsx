@@ -24,7 +24,7 @@ const Modal = ({ open, onClose, title, children }) => {
         role="dialog"
         aria-modal="true"
         aria-label={title}
-        className="relative w-full max-w-md rounded-2xl bg-surface p-6 shadow-pop animate-fade-in"
+        className="relative max-h-[90vh] w-full max-w-md overflow-y-auto rounded-2xl bg-surface p-6 shadow-pop animate-fade-in"
       >
         {title && (
           <h3 className="mb-4 font-display text-lg font-semibold text-ink">
