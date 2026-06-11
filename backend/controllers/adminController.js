@@ -95,3 +95,19 @@ export const getActivityLogs = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
+export const getStats = async (req, res) => {
+  try {
+    const [totalUsers, totalTasks, completedTasks, pendingTasks] =
+      await Promise.all([
+        User.countDocuments(),
+        Task.countDocuments(),
+        Task.countDocuments({ status: "Completed" }),
+        Task.countDocuments({ status: "Pending" }),
+      ]);
+
+    res.json({ totalUsers, totalTasks, completedTasks, pendingTasks });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
