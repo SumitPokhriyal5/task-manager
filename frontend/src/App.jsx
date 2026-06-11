@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import MyTasks from "./pages/MyTasks";
 import AdminOverview from "./pages/admin/AdminOverview";
+import UserManagement from "./pages/admin/UserManagement";
 
 const Placeholder = ({ label }) => (
   <div className="rounded-2xl border border-line bg-surface p-8 shadow-card">
@@ -26,10 +27,7 @@ function App() {
 
           <Route element={<AdminRoute />}>
             <Route path="/admin" element={<AdminOverview />} />
-            <Route
-              path="/admin/users"
-              element={<Placeholder label="User Management" />}
-            />
+            <Route path="/admin/users" element={<UserManagement />} />
             <Route
               path="/admin/tasks"
               element={<Placeholder label="Task Monitoring" />}
