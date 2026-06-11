@@ -8,13 +8,7 @@ import MyTasks from "./pages/MyTasks";
 import AdminOverview from "./pages/admin/AdminOverview";
 import UserManagement from "./pages/admin/UserManagement";
 import TaskMonitoring from "./pages/admin/TaskMonitoring";
-
-const Placeholder = ({ label }) => (
-  <div className="rounded-2xl border border-line bg-surface p-8 shadow-card">
-    <h1 className="font-display text-xl font-semibold">{label}</h1>
-    <p className="mt-1 text-sm text-muted">Coming in a later step.</p>
-  </div>
-);
+import ActivityLogs from "./pages/admin/ActivityLogs";
 
 function App() {
   return (
@@ -30,10 +24,7 @@ function App() {
             <Route path="/admin" element={<AdminOverview />} />
             <Route path="/admin/users" element={<UserManagement />} />
             <Route path="/admin/tasks" element={<TaskMonitoring />} />
-            <Route
-              path="/admin/logs"
-              element={<Placeholder label="Activity Logs" />}
-            />
+            <Route path="/admin/logs" element={<ActivityLogs />} />
           </Route>
         </Route>
       </Route>
