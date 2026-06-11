@@ -2,6 +2,30 @@
 
 A role-based task management application with admin oversight and activity tracking.
 
+## Screenshots
+
+### Login
+<img width="1727" height="1079" alt="Image" src="https://github.com/user-attachments/assets/0b155be7-739e-4b23-aa0a-b8e4bc0c4fbd" />
+
+### Register
+<img width="1727" height="1079" alt="Image" src="https://github.com/user-attachments/assets/6ff707a0-880a-4d44-94d5-5c3fac6a99b0" />
+
+### My Tasks
+<img width="1727" height="1079" alt="Image" src="https://github.com/user-attachments/assets/47285dd5-67ff-4888-8d90-24eaa64fc6a5" />
+
+### Overview (Admin Only)
+<img width="1727" height="1079" alt="Image" src="https://github.com/user-attachments/assets/39ad8072-ca68-4e87-91f2-4891bd207571" />
+
+### Users Management (Admin only)
+<img width="1727" height="1079" alt="Image" src="https://github.com/user-attachments/assets/98338109-d200-417d-b98b-5ffe64014fa2" />
+
+### Task Monitoring (Admin only)
+<img width="1727" height="1079" alt="Image" src="https://github.com/user-attachments/assets/51e3806a-efed-4440-8110-9513d6b85388" />
+
+### Activity (Admin only)
+<img width="1727" height="1079" alt="Image" src="https://github.com/user-attachments/assets/f643b1f0-3493-4f6e-ab43-8e4a113de336" />
+
+
 ## Features
 
 **Users**
